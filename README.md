@@ -21,11 +21,11 @@ test_directory
 
 ### To run the test:
 
-1. `pip install -r requirements.txt`
+1. ```pip install -r requirements.txt```
 
-2. `cd test_directory`
+2. ```cd test_directory```
 
-3. `pytest`
+3. ```pytest```
 
 
 
