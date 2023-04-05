@@ -1,8 +1,11 @@
+# Navigating a Webpage With Selenium Without Specifying an Element
 
+A demo on navigating a web page without specifying an element using Selenium's ActionChain class and execute_script method. 
 
+## Code Structure
 
 ```
-python_unit
+test_directory
 ├─ .gitignore
 ├─ pytest.ini
 ├─ README.md
@@ -14,5 +17,16 @@ python_unit
 └─ webactions
    ├─ javaScript_web_actions.py
    └─ web_actions.py
-
 ```
+
+### To run the test:
+
+1. `pip install -r requirements.txt`
+
+2. `cd test_directory`
+
+3. `pytest`
+
+
+
+
