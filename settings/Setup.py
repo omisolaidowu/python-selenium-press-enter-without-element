@@ -4,13 +4,13 @@ from dotenv import load_dotenv
 import os
 load_dotenv('.env')
 
-LT_USERNAME = os.getenv("grid_username")
-LT_ACCESS_KEY = os.getenv("access_key")
+LT_USERNAME = os.getenv("LT_USERNAME")
+LT_ACCESS_KEY = os.getenv("LT_ACCESS_KEY")
 
 desired_caps = {
 		'LT:Options' : {
-			"user" : os.getenv("grid_username"),
-			"accessKey" : os.getenv("access_key"),
+			"user" : os.getenv("LT_USERNAME"),
+			"accessKey" : os.getenv("LT_ACCESS_KEY"),
 			"build" : "FireTest New",
 			"name" : "FireBrowser",
 			"platformName" : os.getenv("test_OS")

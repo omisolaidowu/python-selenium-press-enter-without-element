@@ -1,3 +1,4 @@
-.env/
+screenshots
 __pycache__/
-test_screenshots
+.env
+.pytest_cache
