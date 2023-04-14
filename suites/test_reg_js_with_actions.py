@@ -16,7 +16,7 @@ class TestUserReg():
         assert "Register" in title, "Todo is not in title"
         webactions.inputfirstName("Idowu")
         webactions.inputlastName("Omisola")
-        webactions.inputEmail("idowuPaultesti18Test@gmail.com")
+        webactions.inputEmail("Idowuhashthing5doomon@gmail.com")
         webactions.inputPhone("08044554455")
         webactions.inputPassword("12345678")
         webactions.inputpasswordConfirm("12345678")

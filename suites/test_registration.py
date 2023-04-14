@@ -20,7 +20,7 @@ class TestUserReg():
         webactions.presstabOnce()
         webactions.inputlastName("Omisola")
         webactions.presstabOnce()
-        webactions.inputEmail("idtestomis23Test@gmail.com")
+        webactions.inputEmail("Testershashranda667yytr7dton@gmail.com")
         webactions.presstabOnce()
         webactions.inputPhone("08044554455")
         webactions.presstabOnce()

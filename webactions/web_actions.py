@@ -10,7 +10,7 @@ class todoLocator:
 class registerWebActions(todoLocator):
     def __init__(self, driver) -> None:
         self.driver = driver
-        self.action = ActionChains(self.driver)
+        self.action = ActionChains(self.driver, duration=2500)
         
     def getWeb(self, URL):
         self.driver.get(URL)
