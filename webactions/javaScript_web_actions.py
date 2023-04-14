@@ -3,19 +3,6 @@ from selenium.webdriver import Keys, ActionChains
 
 import time
 
-
-
-# class todoLocator:
-#     First_Name = "//input[@placeholder='First Name']"
-#     Last_Name = "//input[@placeholder='Last Name']"
-#     Email = "//input[@placeholder='E-Mail']"
-#     Phone = "//input[@placeholder='Telephone']"
-#     Password = "//input[@placeholder='Password']"
-#     Password_Confirm = "//input[@placeholder='Password Confirm']"
-#     Subscribe_yes = ".//*[contains(text(), 'Yes')]"
-#     Agree_Yes = ".//*[contains(text(), 'I have read and agree to the')]"
-#     Submit_Button ="//input[@value='Continue']"
-
 class todoLocator:
     First_Name = 'input[placeholder=\"First Name\"]'
     Last_Name = 'input[placeholder=\"Last Name\"]'
@@ -26,8 +13,6 @@ class todoLocator:
     Subscribe_yes = ".//*[contains(text(), 'Yes')]"
     Agree_Yes = ".//*[contains(text(), 'I have read and agree to the')]"
     Submit_Button ='input[value=\"Continue\"]'
-
-
 
 class registerWebActions(todoLocator):
     def __init__(self, driver) -> None:
@@ -115,6 +100,3 @@ class registerWebActions(todoLocator):
             )
         self.driver.execute_script("arguments[0].click()", submit_button)
         time.sleep(10)
-
-        
-
