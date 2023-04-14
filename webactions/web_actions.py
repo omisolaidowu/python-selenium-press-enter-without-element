@@ -1,6 +1,5 @@
 from selenium.webdriver.common.by import By
 from selenium.webdriver import Keys, ActionChains
-
 import time
 
 class todoLocator:

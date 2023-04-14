@@ -1,6 +1,4 @@
 from selenium.webdriver.common.by import By
-from selenium.webdriver import Keys, ActionChains
-
 import time
 
 class todoLocator:
@@ -23,8 +21,7 @@ class registerWebActions(todoLocator):
 
     def getTitle(self):
         return self.driver.title
-   
-        
+          
     def inputfirstName(self, firstName):     
         first_name_field = self.driver.execute_script(
             "return document.querySelector('{}');".format(self.First_Name)
@@ -34,8 +31,7 @@ class registerWebActions(todoLocator):
             "arguments[0].value='{}';".format(firstName),
               first_name_field
         )
-        
-        
+          
     def inputlastName(self, lastName):    
         last_name_field = self.driver.execute_script(
             "return document.querySelector('{}');".format(self.Last_Name)
@@ -74,8 +70,7 @@ class registerWebActions(todoLocator):
             "arguments[0].value='{}';".format(password),
               password_field
         )
-
-    
+ 
     def inputpasswordConfirm(self, password_confirm):
         password_confirm_field = self.driver.execute_script(
             "return document.querySelector('{}');".format(self.Password_Confirm)
@@ -84,8 +79,7 @@ class registerWebActions(todoLocator):
             "arguments[0].value='{}';".format(password_confirm),
               password_confirm_field
         )
-        
-    
+           
     def subScribe(self):
         subscribebox = self.driver.find_element(By.XPATH, self.Subscribe_yes)
         return self.driver.execute_script("arguments[0].click()", subscribebox)
